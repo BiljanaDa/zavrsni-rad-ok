@@ -30,10 +30,19 @@
                 <p>
                     <?= $post['body'] ?>
                 </p>
+                <button class="btn btn-primary" onclick="Delete()">Delete this post</button>
             </div>
             <?php include('comments.php') ?>
         </div>
             <?php include('sidebar.php'); ?>
 </main>
+<script>
+   function Delete() {
+    var post_id = <?= $post['id']; ?>;
+    if (confirm("Are you sure you want to delete this post?")) {
+        window.location.href = "delete-post.php?post_id=" + post_id;
+    }
+}
+</script>
 
 <?php include('footer.php') ?>

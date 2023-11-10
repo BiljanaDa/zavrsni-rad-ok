@@ -5,7 +5,6 @@
 $sql = "SELECT * FROM posts ORDER BY created_at DESC";
 $posts = getData($sql, $connection, $fetchAll = true);
 
-
 foreach ($posts as $post) { ?>
 
     <div class="blog-post">
