@@ -7,4 +7,5 @@
       <p>
         <a href="#">Back to top</a>
       </p>
+      <script src = "script.js"></script>
 </footer>
