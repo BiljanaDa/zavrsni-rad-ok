@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $statement = $connection->prepare($sql);
     $statement->bindParam(':title', $title, PDO::PARAM_STR);
     $statement->bindParam(':body', $body, PDO::PARAM_STR);
-    $statement->bindParam(':author', $author, PDO::PARAM_STR);
+    $statement->bindParam(':author', $author, PDO::PARAM_INT);
 
     if ($statement->execute()) {
         header('Location: index.php');

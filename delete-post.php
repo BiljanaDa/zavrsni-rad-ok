@@ -14,7 +14,7 @@ $sql = "DELETE FROM posts WHERE id = :post_id";
 $statement = $connection->prepare($sql);
 $statement->bindParam(':post_id', $post_id, PDO::PARAM_INT);
 
-if ($commentsStatement->execute()) {
+if ($statement->execute()) {
     if ($statement->execute()) {
         header('Location: index.php');
         exit;

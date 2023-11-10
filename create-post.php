@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group">
                     <label for="author">Author:</label>
-                    <input type="text" class="form-control" id="author" name="author">
+                    <input type="number" class="form-control" id="author" name="author">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit post</button>
             </form>
