@@ -9,7 +9,7 @@ $posts = getData($sql, $connection, $fetchAll = true);
 foreach ($posts as $post) { ?>
 
     <div class="blog-post">
-        <a href="#">
+        <a href="single-post.php?post_id=<?php echo $post['id'] ?>">
             <h2 class="blog-post-title">
                 <?php echo ($post['title']) ?>
             </h2>
